@@ -15,7 +15,7 @@ RUN echo "Updating apt-get and installing dependencies..." && \
 ARG VROOM_RELEASE=v1.8.0
 
 RUN echo "Cloning and installing vroom release ${VROOM_RELEASE}..." && \
-    git clone https://github.com/VROOM-Project/vroom.git && \
+    git clone https://github.com/jguertl/vroom.git && \
     cd vroom && \
     git fetch --tags && \
     git checkout -q $VROOM_RELEASE && \
